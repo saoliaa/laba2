@@ -1,13 +1,79 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 
-.header{
+.header {
     width: 100%;
     box-sizing: border-box;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 7px rgba(129, 129, 129, 0.25);
+}
+.menu__ul {
+  display: flex;
+  list-style: none;
+}
+
+.menu__li:not(:last-child) {
+  padding-right: 40px;
+}
+
+.menu__link:hover {
+  color: #05A88D;
+}
+
+.menu__link, .menu__signup, .menu__login, .menu__logo {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  align-items: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.menu__logo, .menu__signup, .menu__login {
+  color: #05A88D;
+}
+
+.menu__logo {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+}
+
+.menu__buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__signup, .menu__login {
+  display: flex;
+  justify-content: center;
+  width: 105px;
+  height: 45px;
+}
+
+.menu__signup {
+  margin-right: 40px;
+  border: 1px solid #05A88D;
+  border-radius: 3px;
+}
+
+.menu__login:hover {
+  border: 1px solid #05A88D;
+  border-radius: 3px;
 }

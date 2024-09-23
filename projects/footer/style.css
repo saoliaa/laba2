@@ -1,8 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html,body{
+html, body {
     font-family: 'Exo 2', sans-serif;
     height: 100%;
 }
@@ -14,8 +14,83 @@ html,body{
 .main {
 	flex: 1 0 auto;
 }
-.footer{
+.footer {
     flex: 0 0 auto;
+  background-color: #05A88D;
+  padding: 0 40px;
+  height: 260px;
+  align-items: center;
+letter-spacing: -0.015em;
+}
+/* Стилизовать элемент с классом .footer__top (flexbox) */
+.footer__top {
+  display: flex;
+   justify-content: space-between;
+  align-items: center;
+  height: 174px;
+/*   align-items: center; */
+  /* Линия - это нижняя рамка у элемента div с классом footer__top */
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 36px;
+}
+/* Стилизовать элемент с классом logo */
+.logo {
+  display: block;
+  padding-bottom: 22px;
+  font-weight: 700;
+font-size: 28px;
+line-height: 34px;
+  text-transform: capitalize;
+color: #F1E67D;
+  text-decoration: none;
+}
+/* Стилизовать элемент с классом text */
+.text {
+  font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+  width: 437px;
+  color: #ffffff;
+}
+/* Стилизовать элемент с классом contact */
+.contact {
+  font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-top: 58px;
+  padding-bottom: 16px;
+}
+/* Стилизовать элемент с классом phone */
+.phone {
+  display: block;
+  font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+  text-transform: uppercase;
+  color: #F1E67D;
+  text-decoration: none;
+  padding-bottom: 16px;
+}
+/* Стилизовать элемент с классом address */
+.address {
+  font-weight: 300;
+font-size: 12px;
+line-height: 14px;
+  color: #FFFFFF;
+  padding-bottom: 16px;
 }
 
+.footer__left {
+  display: flex;
+  flex-direction: column;
+/*   padding: 0 auto; */
+  text-align: left;
+}
 
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
